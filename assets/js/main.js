@@ -7,6 +7,4 @@ const observer = new IntersectionObserver(entries => {
   });
 }, { threshold: 0.15 });
 
-document
-  .querySelectorAll('.fade-section')
-  .forEach(sec => observer.observe(sec));
+document.querySelectorAll('.fade-section').forEach(sec => observer.observe(sec));
