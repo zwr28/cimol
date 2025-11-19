@@ -1,0 +1,651 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <title>CHO Record Sample - Website Statis</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- Bootstrap 5 CSS -->
+  <link
+    href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+    rel="stylesheet"
+  >
+
+  <!-- Icon (Bootstrap Icons / optional) -->
+  <link
+    rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css"
+  >
+
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body data-bs-spy="scroll" data-bs-target="#navbarCHO" data-bs-offset="80">
+
+  <!-- Navbar -->
+  <nav id="navbarCHO" class="navbar navbar-expand-lg navbar-dark navbar-custom fixed-top shadow-sm">
+    <div class="container">
+      <a class="navbar-brand d-flex align-items-center gap-2" href="#hero">
+        <i class="bi bi-diagram-3"></i>
+        <span>CHO Record Sample</span>
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navContent">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navContent">
+        <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+          <li class="nav-item"><a class="nav-link" href="#hero">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="#case-journey">Case Journey</a></li>
+          <li class="nav-item"><a class="nav-link" href="#gallery">Gallery CHO</a></li>
+          <li class="nav-item"><a class="nav-link" href="#mini-games">Mini Games</a></li>
+          <li class="nav-item"><a class="nav-link" href="#family-tree">Family Tree</a></li>
+          <li class="nav-item"><a class="nav-link" href="#gathering">Case Gathering</a></li>
+          <li class="nav-item"><a class="nav-link" href="#profile">Profile</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero -->
+  <section id="hero">
+    <div class="container">
+      <div class="row align-items-center gy-4">
+        <div class="col-lg-7 fade-section">
+          <div class="hero-badge mb-3">
+            <i class="bi bi-lightning-charge-fill"></i>
+            <span>GO FORWARD • CHO</span>
+          </div>
+          <h1 class="hero-title mb-3">
+            CHO Record Sample <br>
+            <span class="text-danger">Case Journey & Experience</span>
+          </h1>
+          <p class="hero-subtitle mb-4">
+            Ringkasan interaktif dari perjalanan kasus, dokumentasi tim, mini games, hingga gallery CHO
+            dalam satu halaman website statis yang rapi dan modern.
+          </p>
+          <div class="d-flex flex-wrap gap-2">
+            <a href="#case-journey" class="btn btn-danger btn-lg px-4">
+              <i class="bi bi-diagram-2 me-2"></i>
+              Lihat Case Journey
+            </a>
+            <a href="#gallery" class="btn btn-outline-light border border-2 px-4">
+              <i class="bi bi-image-fill me-2 text-danger"></i>
+              Gallery CHO
+            </a>
+          </div>
+        </div>
+        <div class="col-lg-5 fade-section">
+          <div class="cho-card">
+            <div class="cho-card-header p-3">
+              <div class="d-flex align-items-center justify-content-between">
+                <span class="fw-semibold text-uppercase small">Quick Menu</span>
+                <span class="badge bg-dark bg-opacity-25">CHO</span>
+              </div>
+            </div>
+            <div class="card-body p-3">
+              <div class="row g-2">
+                <div class="col-6">
+                  <a href="#case-journey" class="btn btn-outline-danger w-100 text-start">
+                    <i class="bi bi-diagram-2 me-2"></i>Case Journey
+                  </a>
+                </div>
+                <div class="col-6">
+                  <a href="#mini-games" class="btn btn-outline-danger w-100 text-start">
+                    <i class="bi bi-controller me-2"></i>Mini Games
+                  </a>
+                </div>
+                <div class="col-6">
+                  <a href="#gallery" class="btn btn-outline-danger w-100 text-start">
+                    <i class="bi bi-images me-2"></i>Gallery CHO
+                  </a>
+                </div>
+                <div class="col-6">
+                  <a href="#family-tree" class="btn btn-outline-danger w-100 text-start">
+                    <i class="bi bi-people-fill me-2"></i>Family Tree
+                  </a>
+                </div>
+                <div class="col-12">
+                  <a href="#gathering" class="btn btn-danger w-100">
+                    <i class="bi bi-arrow-right-circle me-2"></i>
+                    GO FORWARD: Case Gathering
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <p class="text-muted small mt-2 mb-0">
+            *Struktur dan konten diadaptasi dari slide PPT CHO Record Sample.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Case Journey -->
+  <section id="case-journey">
+    <div class="container fade-section">
+      <div class="row">
+        <div class="col-lg-4 mb-4 mb-lg-0">
+          <h2 class="section-title">Case Journey</h2>
+          <p class="section-subtitle">
+            Alur penanganan berbagai jenis kasus oleh CHO, mulai dari pengecekan awal hingga case closed,
+            ditampilkan dalam bentuk timeline yang mudah dipahami.
+          </p>
+
+          <div class="list-group small mb-3">
+            <button class="list-group-item list-group-item-action active" data-bs-toggle="tab" data-bs-target="#case-ngrs">
+              <i class="bi bi-cash-coin me-2"></i>Case NGRS / Transaksi
+            </button>
+            <button class="list-group-item list-group-item-action" data-bs-toggle="tab" data-bs-target="#case-migrasi">
+              <i class="bi bi-sim me-2"></i>Migrasi Kartu Halo
+            </button>
+            <button class="list-group-item list-group-item-action" data-bs-toggle="tab" data-bs-target="#case-ganti-kartu">
+              <i class="bi bi-phone-flip me-2"></i>Permintaan Ganti Kartu
+            </button>
+            <button class="list-group-item list-group-item-action" data-bs-toggle="tab" data-bs-target="#case-refund-pulsa">
+              <i class="bi bi-coin me-2"></i>Refund Pulsa / Kuota Telpon
+            </button>
+            <button class="list-group-item list-group-item-action" data-bs-toggle="tab" data-bs-target="#case-network">
+              <i class="bi bi-reception-4 me-2"></i>Kendala Sinyal / Network
+            </button>
+          </div>
+
+          <span class="badge-soft">
+            <i class="bi bi-info-circle me-1"></i>
+            Pilih jenis case untuk melihat detail langkahnya.
+          </span>
+        </div>
+
+        <div class="col-lg-8">
+          <div class="cho-card">
+            <div class="cho-card-header p-3 d-flex justify-content-between align-items-center">
+              <span class="fw-semibold"><i class="bi bi-diagram-2 me-2"></i>Detail Journey</span>
+              <span class="badge bg-light text-dark">End-to-End</span>
+            </div>
+            <div class="card-body">
+              <div class="tab-content">
+
+                <!-- Case NGRS -->
+                <div class="tab-pane fade show active" id="case-ngrs">
+                  <h5 class="mb-3">Case NGRS / Transaksi</h5>
+                  <div class="timeline">
+                    <div class="timeline-item">
+                      <span class="timeline-dot"></span>
+                      <div class="timeline-title">Agent 357 membuat case</div>
+                      <p class="timeline-text mb-1">Case terkait status NGRS / transaksi pelanggan.</p>
+                    </div>
+                    <div class="timeline-item">
+                      <span class="timeline-dot"></span>
+                      <div class="timeline-title">CHO melakukan pengecekan status NGRS</div>
+                      <p class="timeline-text mb-1">
+                        Verifikasi apakah terdapat transaksi atau tidak pada sistem.
+                      </p>
+                      <ul class="timeline-text mb-1">
+                        <li>Ada transaksi</li>
+                        <li>Tidak ada transaksi</li>
+                      </ul>
+                    </div>
+                    <div class="timeline-item">
+                      <span class="timeline-dot"></span>
+                      <div class="timeline-title">Koordinasi ke IT</div>
+                      <p class="timeline-text mb-1">
+                        CHO melakukan callback ke pelanggan dan menginformasikan bahwa case
+                        akan dikoordinasikan ke tim IT. IT melakukan pengecekan lanjutan
+                        pada status NGRS dan membuat laporan koordinasi.
+                      </p>
+                    </div>
+                    <div class="timeline-item">
+                      <span class="timeline-dot"></span>
+                      <div class="timeline-title">Callback hasil pengecekan</div>
+                      <p class="timeline-text mb-1">
+                        CHO kembali menghubungi pelanggan untuk menyampaikan hasil pengecekan
+                        status NGRS dari IT.
+                      </p>
+                    </div>
+                    <div class="timeline-item">
+                      <span class="timeline-dot"></span>
+                      <div class="timeline-title text-success">Case Closed</div>
+                      <p class="timeline-text mb-0">
+                        Setelah informasi disampaikan dan disetujui pelanggan, case dinyatakan selesai.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Case Migrasi Kartu Halo -->
+                <div class="tab-pane fade" id="case-migrasi">
+                  <h5 class="mb-3">Case Migrasi Kartu Halo belum aktif</h5>
+                  <div class="timeline">
+                    <div class="timeline-item">
+                      <span class="timeline-dot"></span>
+                      <div class="timeline-title">Agent IBC membuat case</div>
+                      <p class="timeline-text">
+                        Case terkait migrasi Kartu Halo belum aktif.
+                      </p>
+                    </div>
+                    <div class="timeline-item">
+                      <span class="timeline-dot"></span>
+                      <div class="timeline-title">CHO cek status nomor</div>
+                      <p class="timeline-text mb-1">
+                        Pengecekan status nomor:
+                      </p>
+                      <ul class="timeline-text mb-1">
+                        <li>Sudah migrasi</li>
+                        <li>Belum migrasi</li>
+                      </ul>
+                    </div>
+                    <div class="timeline-item">
+                      <span class="timeline-dot"></span>
+                      <div class="timeline-title">Analisa dan koordinasi</div>
+                      <p class="timeline-text mb-1">
+                        CHO melakukan analisa case dan callback ke pelanggan bahwa case
+                        dalam proses koordinasi dengan OBC.
+                      </p>
+                    </div>
+                    <div class="timeline-item">
+                      <span class="timeline-dot"></span>
+                      <div class="timeline-title">OBC eksekusi migrasi</div>
+                      <p class="timeline-text">
+                        OBC melakukan eksekusi migrasi Kartu Halo dan membuat laporan
+                        koordinasi jika migrasi belum aktif.
+                      </p>
+                    </div>
+                    <div class="timeline-item">
+                      <span class="timeline-dot"></span>
+                      <div class="timeline-title">Callback hasil migrasi</div>
+                      <p class="timeline-text">
+                        CHO menginformasikan ke pelanggan bahwa migrasi Kartu Halo telah aktif
+                        berdasarkan hasil eksekusi dan koordinasi.
+                      </p>
+                    </div>
+                    <div class="timeline-item">
+                      <span class="timeline-dot"></span>
+                      <div class="timeline-title text-success">Case Closed</div>
+                      <p class="timeline-text mb-0">
+                        Case ditutup setelah fitur migrasi sudah aktif dan sesuai kebutuhan pelanggan.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Case Ganti Kartu -->
+                <div class="tab-pane fade" id="case-ganti-kartu">
+                  <h5 class="mb-3">Case Permintaan Ganti Kartu</h5>
+                  <div class="timeline">
+                    <div class="timeline-item">
+                      <span class="timeline-dot"></span>
+                      <div class="timeline-title">Agent membuat case ganti kartu</div>
+                      <p class="timeline-text">
+                        Permintaan ganti kartu online dari pelanggan.
+                      </p>
+                    </div>
+                    <div class="timeline-item">
+                      <span class="timeline-dot"></span>
+                      <div class="timeline-title">CHO cek data pelanggan</div>
+                      <p class="timeline-text mb-1">
+                        Validasi data pelanggan:
+                      </p>
+                      <ul class="timeline-text mb-1">
+                        <li>Data valid</li>
+                        <li>Data tidak valid</li>
+                      </ul>
+                      <p class="timeline-text mb-1">
+                        Jika data tidak valid, CHO callback bahwa ganti kartu online tidak dapat diproses.
+                      </p>
+                    </div>
+                    <div class="timeline-item">
+                      <span class="timeline-dot"></span>
+                      <div class="timeline-title">Konfirmasi S&amp;K Ganti Kartu Online</div>
+                      <p class="timeline-text mb-1">
+                        CHO menjelaskan syarat &amp; ketentuan ganti kartu online:
+                      </p>
+                      <ul class="timeline-text mb-1">
+                        <li>Pelanggan setuju</li>
+                        <li>Pelanggan tidak setuju</li>
+                      </ul>
+                    </div>
+                    <div class="timeline-item">
+                      <span class="timeline-dot"></span>
+                      <div class="timeline-title">Koordinasi dengan Grapari</div>
+                      <p class="timeline-text">
+                        CHO menghubungi Grapari terdekat dengan lokasi pelanggan untuk proses
+                        ganti kartu, monitoring pengiriman dan konfirmasi ke pelanggan.
+                      </p>
+                    </div>
+                    <div class="timeline-item">
+                      <span class="timeline-dot"></span>
+                      <div class="timeline-title text-success">Pelanggan menerima kartu baru</div>
+                      <p class="timeline-text mb-0">
+                        Setelah kartu diterima dan aktif, case dinyatakan selesai (Phase 1).
+                      </p>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Case Refund Pulsa / Kuota -->
+                <div class="tab-pane fade" id="case-refund-pulsa">
+                  <h5 class="mb-3">Case Refund Pulsa &amp; Ketidaksesuaian Penggunaan Kuota Telepon</h5>
+                  <div class="timeline">
+                    <div class="timeline-item">
+                      <span class="timeline-dot"></span>
+                      <div class="timeline-title">Agent IBC membuat case</div>
+                      <p class="timeline-text">
+                        Case ketidaksesuaian penggunaan kuota telepon dan pulsa terpotong.
+                      </p>
+                    </div>
+                    <div class="timeline-item">
+                      <span class="timeline-dot"></span>
+                      <div class="timeline-title">CHO cek &amp; analisa</div>
+                      <p class="timeline-text">
+                        CHO melakukan pengecekan dan analisa case, termasuk histori penggunaan
+                        dan anomali jika ada.
+                      </p>
+                    </div>
+                    <div class="timeline-item">
+                      <span class="timeline-dot"></span>
+                      <div class="timeline-title">Validasi pulsa &amp; eksekusi refund</div>
+                      <p class="timeline-text mb-1">
+                        Jika hasil pengecekan menunjukkan pulsa pelanggan valid untuk refund, CHO:
+                      </p>
+                      <ul class="timeline-text mb-1">
+                        <li>Melakukan eksekusi refund</li>
+                        <li>Membuat Berita Acara (BA)</li>
+                      </ul>
+                    </div>
+                    <div class="timeline-item">
+                      <span class="timeline-dot"></span>
+                      <div class="timeline-title">Callback hasil refund</div>
+                      <p class="timeline-text">
+                        CHO menginformasikan hasil pengecekan pulsa terpotong dan status refund
+                        kepada pelanggan.
+                      </p>
+                    </div>
+                    <div class="timeline-item">
+                      <span class="timeline-dot"></span>
+                      <div class="timeline-title text-success">Case Closed</div>
+                      <p class="timeline-text mb-0">
+                        Case selesai setelah refund berhasil dan pelanggan menerima informasi dengan jelas.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Case Network -->
+                <div class="tab-pane fade" id="case-network">
+                  <h5 class="mb-3">Case Kendala Sinyal Tidak Stabil / Network</h5>
+                  <div class="timeline">
+                    <div class="timeline-item">
+                      <span class="timeline-dot"></span>
+                      <div class="timeline-title">Agent E-Care membuat case network</div>
+                      <p class="timeline-text mb-1">
+                        Kendala sinyal tidak stabil dilaporkan oleh pelanggan.
+                      </p>
+                    </div>
+                    <div class="timeline-item">
+                      <span class="timeline-dot"></span>
+                      <div class="timeline-title">CHO cek profil nomor &amp; histori case</div>
+                      <p class="timeline-text mb-1">
+                        Pengecekan awal:
+                      </p>
+                      <ul class="timeline-text mb-1">
+                        <li>Profil nomor OK → dilakukan refresh fitur nomor dan callback ke pelanggan.</li>
+                        <li>Profil nomor NOK → dilanjutkan ke koordinasi tim Network.</li>
+                      </ul>
+                    </div>
+                    <div class="timeline-item">
+                      <span class="timeline-dot"></span>
+                      <div class="timeline-title">Koordinasi dengan Tim Network</div>
+                      <p class="timeline-text mb-1">
+                        Tim Network melakukan pengecekan dan analisa lebih lanjut, lalu memberikan
+                        hasil koordinasi terkait kendala sinyal.
+                      </p>
+                    </div>
+                    <div class="timeline-item">
+                      <span class="timeline-dot"></span>
+                      <div class="timeline-title">Callback hasil koordinasi</div>
+                      <p class="timeline-text">
+                        CHO menginformasikan ke pelanggan sesuai hasil koordinasi tim Network,
+                        termasuk solusi dan estimasi perbaikan.
+                      </p>
+                    </div>
+                    <div class="timeline-item">
+                      <span class="timeline-dot"></span>
+                      <div class="timeline-title text-success">Case Closed</div>
+                      <p class="timeline-text mb-0">
+                        Case ditutup setelah perbaikan berjalan dan pelanggan terinformasikan dengan baik.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+
+              </div> <!-- tab-content -->
+            </div> <!-- card-body -->
+          </div> <!-- cho-card -->
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Gallery CHO -->
+  <section id="gallery">
+    <div class="container fade-section">
+      <div class="row mb-4">
+        <div class="col-lg-8">
+          <h2 class="section-title">Gallery CHO</h2>
+          <p class="section-subtitle">
+            Dokumentasi momen-momen terbaik CHO, mulai dari aktivitas harian hingga kegiatan spesial.
+            Silakan ganti gambar placeholder dengan foto asli dari kegiatan CHO.
+          </p>
+        </div>
+      </div>
+
+      <div class="row g-4">
+        <div class="col-md-6">
+          <div class="gallery-card">
+            <img src="https://via.placeholder.com/800x500?text=Gallery+CHO+1" alt="Gallery CHO 1">
+            <div class="gallery-overlay">
+              <span class="badge bg-danger mb-2">CHO Activity</span>
+              <h5 class="mb-1">Kegiatan Harian CHO</h5>
+              <p class="small mb-0">Interaksi dengan pelanggan, koordinasi tim, dan monitoring case.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="gallery-card">
+            <img src="https://via.placeholder.com/800x500?text=Gallery+CHO+2" alt="Gallery CHO 2">
+            <div class="gallery-overlay">
+              <span class="badge bg-warning text-dark mb-2">Highlight</span>
+              <h5 class="mb-1">Kolaborasi &amp; Sinergi</h5>
+              <p class="small mb-0">Momen kebersamaan tim CHO dalam menyelesaikan berbagai tantangan.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <p class="small text-muted mt-3">
+        *Ubah URL gambar di atas dengan foto asli (misalnya <code>img/gallery1.jpg</code>, <code>img/gallery2.jpg</code>).
+      </p>
+    </div>
+  </section>
+
+  <!-- Mini Games -->
+  <section id="mini-games">
+    <div class="container fade-section">
+      <div class="row align-items-center gy-4">
+        <div class="col-lg-6">
+          <h2 class="section-title">Mini Games</h2>
+          <p class="section-subtitle">
+            Dari slide: <strong>“Mini Games – Scan Here!”</strong>. Di website ini, bagian ini bisa
+            digunakan untuk QR code, link games, atau aktivitas interaktif lain untuk CHO.
+          </p>
+          <ul class="text-muted small mb-3">
+            <li>Tempelkan gambar QR code asli di sisi kanan.</li>
+            <li>Atau gunakan tombol di bawah untuk mengarahkan ke halaman games.</li>
+          </ul>
+          <a href="#" class="btn btn-danger">
+            <i class="bi bi-controller me-2"></i>
+            Buka Mini Games
+          </a>
+        </div>
+        <div class="col-lg-6 text-center">
+          <div class="cho-card p-4">
+            <div class="qr-placeholder mx-auto mb-3">
+              QR MINI GAMES<br>SCAN HERE
+            </div>
+            <p class="small text-muted mb-0">
+              Ganti kotak di atas dengan file gambar QR code, misalnya:
+              <code>&lt;img src="img/qr-mini-games.png" class="img-fluid rounded-4"&gt;</code>
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Family Tree / Team -->
+  <section id="family-tree">
+    <div class="container fade-section">
+      <div class="row">
+        <div class="col-lg-6 mb-4 mb-lg-0">
+          <h2 class="section-title">Family Tree CHO</h2>
+          <p class="section-subtitle">
+            Adaptasi dari slide yang berisi struktur <strong>Team Leader</strong> dan
+            <strong>Admin Support</strong> dalam “Family Tree”.
+          </p>
+
+          <div class="cho-card p-3">
+            <div class="d-flex align-items-center mb-3">
+              <div class="avatar-badge me-3">
+                <i class="bi bi-people-fill"></i>
+              </div>
+              <div>
+                <div class="fw-semibold">Leadership Team</div>
+                <div class="text-muted small">CHO Family Tree</div>
+              </div>
+            </div>
+
+            <ul class="list-group list-group-flush small">
+              <li class="list-group-item d-flex justify-content-between align-items-center">
+                <span>ADE EKA TAMARA</span><span class="role-pill">Team Leader</span>
+              </li>
+              <li class="list-group-item d-flex justify-content-between align-items-center">
+                <span>INDRA NUGROHO</span><span class="role-pill">Team Leader</span>
+              </li>
+              <li class="list-group-item d-flex justify-content-between align-items-center">
+                <span>YULI SETIAWATI</span><span class="role-pill">Team Leader</span>
+              </li>
+              <li class="list-group-item d-flex justify-content-between align-items-center">
+                <span>RUDDY CORDIANDI</span><span class="role-pill">Team Leader</span>
+              </li>
+              <li class="list-group-item d-flex justify-content-between align-items-center">
+                <span>DANI KARDANI</span><span class="role-pill">Team Leader</span>
+              </li>
+              <li class="list-group-item d-flex justify-content-between align-items-center">
+                <span>ANJAR KESUMARAHARJO</span><span class="role-pill">Supervisor CHO</span>
+              </li>
+              <li class="list-group-item d-flex justify-content-between align-items-center">
+                <span>Aprilliani</span><span class="role-pill">Admin Support</span>
+              </li>
+              <li class="list-group-item d-flex justify-content-between align-items-center">
+                <span>Diah Fitriyana Aziza</span><span class="role-pill">Admin Support</span>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Case Gathering info -->
+        <div class="col-lg-6" id="gathering">
+          <h2 class="section-title">Case Gathering</h2>
+          <p class="section-subtitle">
+            Bagian ini mengadaptasi slide “Case Gathering” yang menunjukkan aktivitas bersama
+            dan penguatan kolaborasi tim CHO.
+          </p>
+
+          <div class="cho-card p-4">
+            <div class="d-flex align-items-center mb-3">
+              <span class="badge bg-warning text-dark me-2">
+                <i class="bi bi-emoji-smile me-1"></i> GO FORWARD
+              </span>
+              <span class="small text-muted">Kolaborasi • Sinergi • Apresiasi</span>
+            </div>
+            <p class="mb-2">
+              Case Gathering dapat berisi:
+            </p>
+            <ul class="small text-muted mb-3">
+              <li>Sharing session dari tiap Team Leader dan Supervisor CHO.</li>
+              <li>Review perjalanan case, best practice, dan pembelajaran.</li>
+              <li>Games &amp; ice breaking untuk mempererat kekompakan tim.</li>
+            </ul>
+            <p class="small text-muted mb-0">
+              Tambahkan foto kegiatan atau agenda detail di sini agar sesuai dengan kegiatan aktual.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Profile slide (Saefuloh) -->
+  <section id="profile">
+    <div class="container fade-section">
+      <div class="row justify-content-center">
+        <div class="col-lg-8">
+          <h2 class="section-title text-center">Profile Highlight</h2>
+          <p class="section-subtitle text-center">
+            Diadaptasi dari slide yang memuat data diri, hobi, dan quote.
+          </p>
+
+          <div class="cho-card p-4">
+            <div class="row align-items-center gy-3">
+              <div class="col-md-3 text-center">
+                <div class="avatar-badge mx-auto mb-2">
+                  <span>S</span>
+                </div>
+                <span class="badge bg-danger">Saefuloh</span>
+              </div>
+              <div class="col-md-9">
+                <div class="row small mb-2">
+                  <div class="col-4 fw-semibold">Nama</div>
+                  <div class="col-8">Saefuloh</div>
+                  <div class="col-4 fw-semibold">Asal</div>
+                  <div class="col-8">Bandung Barat</div>
+                  <div class="col-4 fw-semibold">IG</div>
+                  <div class="col-8">_saefuloh</div>
+                  <div class="col-4 fw-semibold">FB</div>
+                  <div class="col-8">saefuloh.ss@gmail.com</div>
+                  <div class="col-4 fw-semibold">Hobby</div>
+                  <div class="col-8">Menulis</div>
+                </div>
+                <blockquote class="mb-0 fst-italic small text-muted border-start ps-3">
+                  "Ada yang tak seberuntung kamu. Tapi rasa syukurnya melebihi dirimu."
+                </blockquote>
+              </div>
+            </div>
+          </div>
+          <p class="small text-muted mt-2">
+            *Anda bisa menambahkan profile lainnya dengan meng-copy blok kartu ini dan mengganti data di dalamnya.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <div class="container text-center small">
+      <div>CHO Record Sample • GO FORWARD</div>
+      <div class="mt-1">
+        Static site adaptasi dari file presentasi PPT.
+      </div>
+    </div>
+  </footer>
+
+  <!-- Bootstrap JS -->
+  <script
+    src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js">
+  </script>
+
+  <!-- Custom JS -->
+  <script src="assets/js/main.js"></script>
+</body>
+</html>
